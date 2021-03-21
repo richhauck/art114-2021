@@ -2,10 +2,9 @@
   "name": "art114",
   "version": "1.0.0",
   "description": "Syllabus Site for Art 114: Interactive Media and Design, HACC",
-  "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve & postcss styles/tailwind.css --o _tmp/style.css --watch",
-    "build": "ELEVENTY_PRODUCTION=true eleventy & NODE_ENV=production postcss styles/tailwind.css --o _site/style.css"
+    "start": "eleventy --serve & postcss styles/main.css --o _tmp/style.css --watch",
+    "build": "ELEVENTY_PRODUCTION=true eleventy & NODE_ENV=production postcss styles/main.css --o _site/style.css"
   },
   "keywords": [],
   "author": "Rich Hauck",
@@ -14,7 +13,10 @@
     "@11ty/eleventy": "^0.11.1",
     "autoprefixer": "^10.2.5",
     "clean-css-cli": "^5.2.1",
+    "cssnano": "^4.1.10",
     "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.0",
+    "postcss-nested": "^5.0.5",
     "tailwindcss": "^2.0.3"
   }
 }

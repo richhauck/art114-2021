@@ -1,0 +1,8 @@
+---
+permalink: /resources/responsive-design/active-page-highlight/css/style.css
+---
+body#page1 li:nth-child(1) a,
+body#page2 li:nth-child(2) a{
+  color:black;
+  font-weight: bold;
+}
